@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construção de História</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Construção de História</h1>
+
+    <div id="container">
+
+        <!-- Ficha de Personagem -->
+        <section id="ficha-personagem">
+            <h2>Ficha de Personagem</h2>
+            <form id="personagem-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" required><br>
+
+                <label for="personalidade">Personalidade:</label>
+                <textarea id="personalidade" name="personalidade"></textarea><br>
+
+                <label for="motivo">Motivação:</label>
+                <textarea id="motivo" name="motivo"></textarea><br>
+
+                <label for="localizacao">Localização Atual:</label>
+                <select id="localizacao" name="localizacao">
+                    <option value="cidadeA">Cidade A</option>
+                    <option value="cidadeB">Cidade B</option>
+                </select><br>
+
+                <label for="pai">Nome do Pai:</label>
+                <input type="text" id="pai" name="pai"><br>
+
+                <label for="mae">Nome da Mãe:</label>
+                <input type="text" id="mae" name="mae"><br>
+
+                <label for="irmao">Nome de Irmão/Irmã:</label>
+                <input type="text" id="irmao" name="irmao"><br>
+
+                <label for="conjuge">Nome do Cônjuge:</label>
+                <input type="text" id="conjuge" name="conjuge"><br>
+
+                <button type="submit">Salvar Personagem</button>
+            </form>
+        </section>
+
+        <!-- Ficha de Cenário -->
+        <section id="ficha-cenario">
+            <h2>Ficha de Cenário</h2>
+            <form id="cenario-form">
+                <label for="cenario-nome">Nome do Cenário:</label>
+                <input type="text" id="cenario-nome" name="cenario-nome" required><br>
+
+                <label for="cultura">Cultura:</label>
+                <textarea id="cultura" name="cultura"></textarea><br>
+
+                <label for="historia">História:</label>
+                <textarea id="historia" name="historia"></textarea><br>
+
+                <label for="clima">Clima/Geografia:</label>
+                <input type="text" id="clima" name="clima"><br>
+
+                <label for="economia">Economia:</label>
+                <input type="text" id="economia" name="economia"><br>
+
+                <button type="submit">Salvar Cenário</button>
+            </form>
+        </section>
+
+        <!-- Linha do Tempo -->
+        <section id="linha-do-tempo">
+            <h2>Linha do Tempo</h2>
+            <form id="timeline-form">
+                <label for="nome-cena">Nome da Cena:</label>
+                <input type="text" id="nome-cena" name="nome-cena" required><br>
+
+                <label for="descricao-cena">Descrição da Cena:</label>
+                <textarea id="descricao-cena" name="descricao-cena"></textarea><br>
+
+                <button type="submit">Salvar Cena</button>
+            </form>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
